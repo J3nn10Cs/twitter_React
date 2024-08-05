@@ -1,19 +1,37 @@
 //componentes PasCal
 import './App.css'
+import { TwitterFollowCard } from './TwitterFollowCard'
 export function App(){
-    return(
-        <article>
-            <header>
-                <img src="https://unavatar.io/kikobeats?ttl=1h" alt="avatar" />
-                <div>
-                    <strong>Jennifer Chileno Santisteban</strong>
-                    <span>@J3nn1Cs</span>
-                </div>
-            </header>
+    //Props
+    const format = (userName) => `@${userName}`
 
-            <aside>
-                <button>Seguir</button>
-            </aside>
-        </article>
+    // const formattedUserName = <span>@Jennifer</span>
+    return(
+        <>
+        <section className="App">
+        <TwitterFollowCard
+            userName="Jennifer Chileno Santisteban"
+            name= "J3nn10Cs"
+            formatUserName = {format}
+            isFollowing
+            urlImg="../public/hola1.jpg"
+        />
+        <TwitterFollowCard
+            userName="Marcia Casas Castillo"
+            name= "Mcasasc"
+            formatUserName = {format}
+            isFollowing
+            urlImg="../public/hola2.jpg"
+        />
+        <TwitterFollowCard
+            userName="Marcia Casas Castillo"
+            name= "Mcasasc"
+            formatUserName = {format}
+            isFollowing
+            urlImg="../public/hola2.jpg"
+        />
+        </section>
+        </>
+        
     )
 }
