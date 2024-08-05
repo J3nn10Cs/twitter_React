@@ -4,7 +4,7 @@ export function TwitterFollowCard({formatUserName,userName, name, urlImg}){
     const [isFollowing,setFollowing] = useState(false)
     //valor inicial del estado
     // const isFollowing = state[0]
-    // //cambiar
+    // //valor a cambiar
     // const setFollowing = state[1]
 
     const text = isFollowing ? 'Siguiendo' : 'Seguir'
@@ -30,7 +30,8 @@ export function TwitterFollowCard({formatUserName,userName, name, urlImg}){
 
             <aside>
                 <button className={buttonClassName} onClick={handleClick}>
-                    {text}
+                    <span className="tw-follorCard-text">{text}</span>
+                    <span className="tw-follorCard-stopFollow">Deja de seguir</span>
                 </button>
             </aside>
         </article>

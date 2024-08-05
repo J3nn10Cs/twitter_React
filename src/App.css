@@ -42,10 +42,27 @@ article header span{
     transition: .3s ease background-color;
 }
 
+.tw-follorCard-tex{
+    display: block;
+}
+
 .tw-follorCard-button.is-following:hover{
     background-color: red;
+    opacity: 1;
+}
+
+.tw-follorCard-button.is-following:hover .tw-follorCard-text{
+    display: none;
+}
+
+.tw-follorCard-button.is-following:hover .tw-follorCard-stopFollow{
+    display: block;
 }
 
 .tw-follorCard-button:hover{
     background-color: #09f;
+}
+
+.tw-follorCard-stopFollow{
+    display: none;
 }
