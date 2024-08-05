@@ -30,6 +30,20 @@ export function App(){
             isFollowing
             urlImg="../public/hola2.jpg"
         />
+        <TwitterFollowCard
+            userName="Marcia Casas Castillo"
+            name= "Mcasasc"
+            formatUserName = {format}
+            isFollowing
+            urlImg="../public/hola2.jpg"
+        />
+        <TwitterFollowCard
+            userName="Marcia Casas Castillo"
+            name= "Mcasasc"
+            formatUserName = {format}
+            isFollowing
+            urlImg="../public/hola2.jpg"
+        />
         </section>
         </>
         
